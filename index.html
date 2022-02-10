@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 10;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("oasis.jpg");
+  height: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: no-cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+
+<body>
+
+<div class="hero-image">
+<body style= "background-color: white">
+<div class="navigation-bar">
+        <div id="navigation-container">
+ <img src="data:image/png;base64,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" height= "100">
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="page2.html"></a></li>
+  <li><a href="page3.html"></a></li>
+  <li><a href="page4.html"></a></li>
+  <li><a href="page5.html">Contact Us</a></li>
+</ul>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+}
+
+
+header {
+  background-color:#.
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: Green;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px; 
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+  <h1 style="color:purple;">ANYTIME FITNESS PUNGGOL OASIS</h1>
+</header>
+<p style= "font-size: 25px; color: white"> Vision:
+<br><b><i> We inspire and help people to lead healthier, happier lives.</i></b>
+<br> Mission:
+<br><i><b>We provide an inspiring environment and passionate professionals, realising the very best of every body.</i></b>
+</p>
+</body>
+<center><img src="STF11.jpg" alt=sportscentre" width="600" height="450">
+<iframe width="500" height="500" src="https://www.youtube.com/embed/VJ9knrTMtBI">
+</iframe></center>
+
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="page2.html">Studio Features</a></li>
+    </ul>
+<img src="STF4A.jpg" alt=gym1" width="392" height="300">
+  </nav>
+  
+  <article>
+    <h1>An Oasis Of Goodness</h1>
+    <p>Looking for a place to kickstart your fitness journey? Or searching for a training ground to take your trainings to the next level? Look no further, for Anytime Fitness Punggol Oasis is just the place for you! The friendly staff and trainers, spacious and well-furbrished gym, together with the immaculate vibes of the premise ensures a quality experience every session, with all your needs well taken care of! We care, because we value you.
+
+</p>
+  </article>
+
+  <nav>
+    <ul>
+     <li><a href="page3.html">PURE Fitness Philosophy</a></li>
+    </ul>
+<img src="STF2A.jpg" alt=sportshall1" width="392" height="300">
+  </nav>
+  
+  <article>
+    <h1>What Oasis provides</h1>
+    <p><li>Well maintained Lockers and Clean Toilets
+<li>Quality Gym Machines
+<li>Exciting fitness classes 
+<li>Boxing & Kickboxing Area 
+<li>Well conditioned Weightlifting Platforms
+<li>Well stocked vending machines
+<li>Clean water coolers
+<li>Free Weight Equipment
+<li>Myraid of Cardio Equipment
+<li>Wi-Fi & Phone Chargers
+<li>And many more to make you feel pampered @Oasis!
+
+
+</p>
+  </article>
+
+<nav>
+    <ul>
+      <li><a href="page4.html">I'm New</a></li>
+    </ul>
+<img src="STF3A.jpg" alt=swimming1" width="392" height="200">
+  </nav>
+  
+  
+
+
+
+<article>
+    <h1>Oasis's message to all</h1>
+    <p>We are committed to building a close-knitted family at Punggol Oasis. Come join us today for an invaluable journey you will cherish for a long time to come.
+</p>
+  </article>
+
+</section>
+<hr>
+<center><h1> For Your Information </h1>
+<p> <font size="4" face="verdana" color="black"> <strong>Address:</strong> 681 Punggol Drive, Oasis Terraces GF, 820681  
+<br><b>Telephone No</b>:8869 6622
+<br><b>Directions:</b>
+<br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.622572839057!2d103.9114988144853!3d1.402786761794489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da15caba9f61d1%3A0xa1081696c72447af!2sAnytime%20Fitness!5e0!3m2!1sen!2ssg!4v1644410360164!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><center>
+
+<p style="text-align:center;"><a href="#top">Back to Top</a></p>
+<p style= "text-align: center"><i><u> Follow us on our social media</u></i></p>
+<p style="text-align:center">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<a href="https://www.facebook.com/PureFitnessSG/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/purefitnesssingapore/?hl=en" class="fa fa-instagram"></a>
+</p>
+</body>
+</html>
